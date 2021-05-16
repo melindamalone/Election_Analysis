@@ -18,7 +18,7 @@
 ![](Resources/Election_Results.PNG)
 
 
-<img src="Resources/Election_Results.PNG" width="100">
+<img src="Resources/Election_Results.PNG" width="300">
 
 
 ### Election Audit Summary
