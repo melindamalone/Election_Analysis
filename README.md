@@ -20,9 +20,9 @@
 
 ### Election Audit Summary
 
-###### It is my opinion, the Election Analysis script can be modified in at least two methods in order to be used for other precinct elections.  Initially, in the file_to_load path, the filename will need to be updated from election_results.csv to the new filename for the other election CSV files. Next, in the first for loop of the script, the row index numbers for candidate_name and county_name will need to be adjusted to align with the new CSV file.  The row index numbers will need to be updated to align where in the CSV file the candidate_name and county_name are actually located within the new election file. 
+###### It is my opinion, the Election Analysis script can be modified in at least two methods in order to be used for other precinct elections.  Initially, in the file_to_load path, the filename will need to be updated from election_results.csv to the new filename of the other election CSV files. Next, in the first for loop of the script, the row index numbers for candidate_name and county_name will need to be adjusted to align with the new CSV file.  The row index numbers will need to be updated to align where in the new CSV file the candidate_name and county_name are actually located within it. 
 
-1. Update the filename from **election_results.csv** to the new filename for the other precinct election files.
+1. At the beginning of the Election Analysis script as shown below, update the filename from **election_results.csv** to the new filename for the other precinct election files.
 
 ```
 # Add a variable to load a file from a path.
