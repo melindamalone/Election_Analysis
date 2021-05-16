@@ -4,7 +4,7 @@
 
 ### Purpose
 
-###### The purpose of Module Three and the Election Analysis Challenge is to learn how to use the programming language, Python, in conjunction with the software, Microsoft Visual Studio Code.  By using Python and VS Code, it is my responsibility to confirm the winner of the election and analyze the data further to determine which county had the highest voter turnout.  The actual vote count and percentages were determined for each candidate and each county.  
+###### The purpose of Module Three and the Election Analysis Challenge is to learn how to use the programming language, Python, in conjunction with the software, Microsoft Visual Studio Code.  By using Python and VS Code, it is my responsibility to confirm the winner of the election and analyze the data further to determine which county had the highest voter turnout.  The actual vote count and percentages were determined for each candidate and each county using lists, dictionaries, for loops, and conditional statements with membership and logical operators.
 
 ### Election Audit Results
 
@@ -15,13 +15,14 @@
 - **Winner:** Diana DeGette 73.8% (272,892)
 
 
+### Snapshot of election_results.txt
 <img src="Resources/Election_Results.PNG" width="300">
 
 ### Election Audit Summary
 
-###### It is my opinion, the Election Analysis script can be modified in at least two methods in order to be used for other elections.  Initially, in the file_to_load path, the filename will need to be updated from election_results.csv to the new filename for the other election files. Next in the first for loop of the script, the row index numbers for candidate_name and county_name will need to be adjusted to align with the new CSV file tied to the other elections. 
+###### It is my opinion, the Election Analysis script can be modified in at least two methods in order to be used for other precinct elections.  Initially, in the file_to_load path, the filename will need to be updated from election_results.csv to the new filename for the other election CSV files. Next, in the first for loop of the script, the row index numbers for candidate_name and county_name will need to be adjusted to align with the new CSV file.  The row index numbers will need to be updated to align where in the CSV file the candidate_name and county_name are actually located within the new election file. 
 
-1. Update the filename from election_results.csv to the new filename for the other election files.
+1. Update the filename from **election_results.csv** to the new filename for the other precinct election files.
 
 ```
 # Add a variable to load a file from a path.
@@ -29,7 +30,7 @@ file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_results.txt")
 ```
-2. In the first for loop, the row index numbers for candidate_name and county_name will need to be adjusted to align with the new CSV file. 
+2. In the first for loop as shown in below Python code, the row index numbers for **candidate_name** and **county_name** will need to be adjusted to align where in the CSV file the candidate_name and county_name are actually located in new file. 
 
 ```
 # For each row in the CSV file.
